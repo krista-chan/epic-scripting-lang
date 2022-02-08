@@ -1,7 +1,4 @@
-use parser::ast::TopLevel;
-use parser::error::Diagnostic;
-
-mod parser;
+use scripting_lang::parser::ast::TopLevel;
 
 fn main() {
     let tl = include_str!("../test.file").parse::<TopLevel>().unwrap();

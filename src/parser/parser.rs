@@ -24,7 +24,7 @@ use super::ast::StrFlags;
 use super::ast::StructVis;
 use super::ast::TopLevel;
 
-use crate::yeet; // <-- errors here
+use crate::yeet;
 
 pub type Token = Spanned<Tokens>;
 
@@ -99,7 +99,7 @@ impl<'l> Lexer<'l> {
         }
 
         let after = now.elapsed().as_micros();
-        println!("{} microseconds", after);
+        // println!("{} microseconds", after);
 
         top_level
     }
@@ -286,7 +286,7 @@ impl<'l> Lexer<'l> {
                             Some('"') => '\"',
                             Some('\'') => '\'',
                             Some('\\') => '\\',
-                            Some(c) => error! {
+                            Some(c) => yeet! {
                                 format!("Invalid escape char '{}'", c),
                                 self.pos,
                                 self.source,
@@ -294,8 +294,7 @@ impl<'l> Lexer<'l> {
                                 ErrKind::Syntax,
                                 vec![""],
                                 self.file.clone()
-                            }
-                            .exit(),
+                            },
                             None => unreachable!(),
                         }
                     } else {

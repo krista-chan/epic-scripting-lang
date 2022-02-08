@@ -19,3 +19,11 @@ criterion = "0.3.5"
 [[bench]]
 name = "all_ast"
 harness = false
+
+[[bench]]
+name = "1_mil_lines"
+harness = false
+
+[[bench]]
+name = "6_mil_lines"
+harness = false
