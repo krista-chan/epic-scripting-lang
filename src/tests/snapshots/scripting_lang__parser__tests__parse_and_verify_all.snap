@@ -1,0 +1,216 @@
+---
+source: src/parser/tests/mod.rs
+assertion_line: 20
+expression: ast
+
+---
+TopLevel {
+    consts: [
+        Const {
+            name: Spur(7),
+            value: Int(
+                10,
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(8),
+            value: Int(
+                10,
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(9),
+            value: Int(
+                10,
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(10),
+            value: Int(
+                10,
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(11),
+            value: Float(
+                0.1,
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(12),
+            value: Char(
+                'c',
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(13),
+            value: Identifier(
+                Spur(14),
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(15),
+            value: Str(
+                (
+                    Spur(16),
+                    None,
+                ),
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(17),
+            value: Atom(
+                Spur(18),
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(19),
+            value: Array(
+                [
+                    Str(
+                        (
+                            Spur(20),
+                            None,
+                        ),
+                    ),
+                    Str(
+                        (
+                            Spur(21),
+                            None,
+                        ),
+                    ),
+                ],
+            ),
+            visibility: Private,
+        },
+        Const {
+            name: Spur(22),
+            value: Dict(
+                [
+                    (
+                        Identifier(
+                            Spur(23),
+                        ),
+                        Array(
+                            [
+                                Str(
+                                    (
+                                        Spur(24),
+                                        None,
+                                    ),
+                                ),
+                                Str(
+                                    (
+                                        Spur(25),
+                                        None,
+                                    ),
+                                ),
+                                Str(
+                                    (
+                                        Spur(26),
+                                        None,
+                                    ),
+                                ),
+                                Str(
+                                    (
+                                        Spur(27),
+                                        None,
+                                    ),
+                                ),
+                                Str(
+                                    (
+                                        Spur(28),
+                                        None,
+                                    ),
+                                ),
+                            ],
+                        ),
+                    ),
+                    (
+                        Identifier(
+                            Spur(29),
+                        ),
+                        Dict(
+                            [
+                                (
+                                    Identifier(
+                                        Spur(24),
+                                    ),
+                                    Array(
+                                        [
+                                            Array(
+                                                [
+                                                    Str(
+                                                        (
+                                                            Spur(25),
+                                                            None,
+                                                        ),
+                                                    ),
+                                                ],
+                                            ),
+                                            Array(
+                                                [
+                                                    Str(
+                                                        (
+                                                            Spur(30),
+                                                            None,
+                                                        ),
+                                                    ),
+                                                ],
+                                            ),
+                                            Array(
+                                                [
+                                                    Str(
+                                                        (
+                                                            Spur(31),
+                                                            None,
+                                                        ),
+                                                    ),
+                                                ],
+                                            ),
+                                        ],
+                                    ),
+                                ),
+                            ],
+                        ),
+                    ),
+                ],
+            ),
+            visibility: Private,
+        },
+    ],
+    imports: [
+        Import {
+            path: Spur(3),
+            selected_members: Escaped(
+                [
+                    Identifier(
+                        Spur(1),
+                    ),
+                    Identifier(
+                        Spur(2),
+                    ),
+                ],
+            ),
+        },
+        Import {
+            path: Spur(4),
+            selected_members: AllEscaped,
+        },
+        Import {
+            path: Spur(6),
+            selected_members: All(
+                Spur(5),
+            ),
+        },
+    ],
+}

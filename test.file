@@ -1,0 +1,16 @@
+import [foo, bar] from "package";
+import * from "package2"
+import baz from "package3"
+
+const int = 10;
+const int2 = 0x0a;
+const int3 = 0b1010;
+const int4 = 0o12;
+const float = 0.1;
+const char = 'c';
+const bool = true;
+const string = "boobs";
+const atom = :tiddy;
+
+const array = ["boobies", "other boobies"]
+const dict = {tits: ["you", "can", "put", "arrays", "here"], also: {you: [["can"], ["nest"], ["dicts"]]}}
