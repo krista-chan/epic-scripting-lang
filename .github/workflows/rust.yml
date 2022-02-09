@@ -22,6 +22,7 @@ jobs:
       run: cargo test --verbose
     - name: Run criterion tests
       run: cargo bench
-    - name: Generate insta snapshots
-    - run: cargo install cargo-insta
-    - run: cargo insta test
+    - name: Install cargo-insta
+      run: cargo install cargo-insta
+    - name: Generate cargo insta snapshots
+      run: cargo insta test
