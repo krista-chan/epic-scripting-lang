@@ -49,7 +49,7 @@ impl<'l> Lexer<'l> {
     pub fn next(&mut self) -> Option<Token> {
         let mut token = self.tokens.next()?;
 
-        if token.0 == Whitespace {
+        while token.0 == Whitespace {
             self.pos.1 += 1;
             token = self.tokens.next()?;
         }
@@ -92,14 +92,9 @@ impl<'l> Lexer<'l> {
         let mut rodeo = Rodeo::new();
         let mut top_level = TopLevel::new();
 
-        let now = std::time::Instant::now();
-
         while self.peek().is_some() {
             self.parse_userdef(&mut rodeo, &mut top_level);
         }
-
-        let after = now.elapsed().as_micros();
-        // println!("{} microseconds", after);
 
         top_level
     }

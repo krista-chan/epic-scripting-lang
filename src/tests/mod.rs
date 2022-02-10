@@ -17,4 +17,4 @@ macro_rules! parse_and_verify {
     };
 }
 
-parse_and_verify!(all, "test.file");
+parse_and_verify!(all, "src/tests/test.file");

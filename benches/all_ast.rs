@@ -7,7 +7,7 @@ fn test_all(input: &str) {
 }
 
 fn criterion_benchmark(c: &mut Criterion) {
-    let input = fs::read_to_string("test.file").unwrap();
+    let input = fs::read_to_string("src/tests/test.file").unwrap();
 
     let mut bmg = c.benchmark_group("main");
     bmg.throughput(Throughput::Bytes(input.len() as u64));
