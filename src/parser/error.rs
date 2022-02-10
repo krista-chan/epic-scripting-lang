@@ -1,4 +1,4 @@
-use super::parser::Token;
+use super::parse::Token;
 use colored::Colorize;
 use std::fmt::Debug;
 use std::{error::Error, fmt::Display, path::PathBuf};

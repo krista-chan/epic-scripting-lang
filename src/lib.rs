@@ -1,10 +1,10 @@
-#![allow(dead_code)]
+#![allow(dead_code, unused_imports)]
 #![feature(option_result_contains)]
 
 pub mod parser;
 
 #[cfg(test)]
-pub mod tests;
+mod tests;
 
 use parser::ast::TopLevel;
 use parser::error::Diagnostic;

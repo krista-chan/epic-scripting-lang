@@ -1,4 +1,4 @@
-use super::parser::{Lexer, Spanned};
+use super::parse::{Lexer, Spanned};
 use lasso::Spur;
 use std::fmt::Debug;
 use std::str::FromStr;
